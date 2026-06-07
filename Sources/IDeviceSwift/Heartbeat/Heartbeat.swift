@@ -18,9 +18,9 @@ public class HeartbeatManager {
 	typealias IdevicePairingFile = OpaquePointer
 	typealias RpPairingFileHandle = OpaquePointer
 	typealias TcpProviderHandle = OpaquePointer
-	typealias AdapterHandle = OpaquePointer
+	public typealias AdapterHandle = OpaquePointer
 	typealias RemoteServerHandle = OpaquePointer
-	typealias RsdHandshakeHandle = OpaquePointer
+	public typealias RsdHandshakeHandle = OpaquePointer
 	typealias HeartbeatClientHandle = OpaquePointer
 	
 	public var fileManager = FileManager.default
