@@ -15,12 +15,12 @@ extension HeartbeatManager {
 	private static var _adapter: AdapterHandle?
 	private static var _handshake: RsdHandshakeHandle?
 
-	var adapter: AdapterHandle? {
+	public var adapter: AdapterHandle? {
 		get { Self._adapter }
 		set { Self._adapter = newValue }
 	}
 
-	var handshake: RsdHandshakeHandle? {
+	public var handshake: RsdHandshakeHandle? {
 		get { Self._handshake }
 		set { Self._handshake = newValue }
 	}
@@ -144,7 +144,7 @@ extension HeartbeatManager {
 
 	// MARK: - RSD Tunnel
 
-	internal func ensureRSDTunnel() -> Bool {
+	public func ensureRSDTunnel() -> Bool {
 		guard !isRestartInProgress else {
 			return true
 		}
